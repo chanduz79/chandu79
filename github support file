@@ -1,1 +1,0 @@
-var timeoutTime = 33.3;self.onmessage = function(msg){	timeoutTime = parseInt(msg.data);};function tick(){	setTimeout(tick, timeoutTime);	self.postMessage('tick');}tick();
